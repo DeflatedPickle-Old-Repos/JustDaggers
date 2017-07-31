@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "justdaggers",
+    "name": "JustDaggers",
+    "description": "A Minecraft mod that adds some daggers.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "updateUrl": "",
+    "authorList": ["DeflatedPickle"],
+    "credits": "DeflatedPickle, Bluexin, Tencao, Loremaster, TehNut, pau101",
+    "url": "https://github.com/DeflatedPickle/JustDaggers",
+    "logoFile": "logo.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
