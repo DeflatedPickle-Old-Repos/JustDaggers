@@ -43,10 +43,8 @@ public class ItemDagger extends Item {
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
         stack.damageItem(1, attacker);
 
-        if (target.getHorizontalFacing() == attacker.getHorizontalFacing()){
+        if (target.getHorizontalFacing().equals(attacker.getHorizontalFacing())){
             // System.out.println("Backstab!");
-
-            target.attackEntityFrom(DamageSource.GENERIC, 4);
 
             if (attacker instanceof EntityPlayer){
                 if (!((EntityPlayer) attacker).world.isRemote) {
