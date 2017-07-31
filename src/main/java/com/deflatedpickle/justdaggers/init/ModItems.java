@@ -15,10 +15,10 @@ public class ModItems {
 
     public static void init(){
         WOODEN_DAGGER = new ItemDagger(Item.ToolMaterial.WOOD, "daggerWood", "wooden_dagger");
-        STONE_DAGGER = new ItemDagger(Item.ToolMaterial.WOOD, "daggerStone", "stone_dagger");
-        IRON_DAGGER = new ItemDagger(Item.ToolMaterial.WOOD, "daggerIron", "iron_dagger");
-        GOLD_DAGGER = new ItemDagger(Item.ToolMaterial.WOOD, "daggerGold", "gold_dagger");
-        DIAMOND_DAGGER = new ItemDagger(Item.ToolMaterial.WOOD, "daggerDiamond", "diamond_dagger");
+        STONE_DAGGER = new ItemDagger(Item.ToolMaterial.STONE, "daggerStone", "stone_dagger");
+        IRON_DAGGER = new ItemDagger(Item.ToolMaterial.IRON, "daggerIron", "iron_dagger");
+        GOLD_DAGGER = new ItemDagger(Item.ToolMaterial.GOLD, "daggerGold", "gold_dagger");
+        DIAMOND_DAGGER = new ItemDagger(Item.ToolMaterial.DIAMOND, "daggerDiamond", "diamond_dagger");
     }
 
     public static void register(){

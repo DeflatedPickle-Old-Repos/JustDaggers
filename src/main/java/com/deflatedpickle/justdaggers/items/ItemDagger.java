@@ -7,9 +7,11 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -25,7 +27,7 @@ public class ItemDagger extends Item {
         this.maxStackSize = 1;
         this.setMaxDamage(material.getMaxUses() / 2);
         this.setCreativeTab(CreativeTabs.COMBAT);
-        this.attackDamage = 1.0F + material.getDamageVsEntity();
+        this.attackDamage = 0.5F + material.getDamageVsEntity();
         this.attackSpeed = -1.0D;
 
         setUnlocalizedName(unlocalized);
@@ -40,6 +42,7 @@ public class ItemDagger extends Item {
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker)
     {
         stack.damageItem(1, attacker);
+
         return true;
     }
 

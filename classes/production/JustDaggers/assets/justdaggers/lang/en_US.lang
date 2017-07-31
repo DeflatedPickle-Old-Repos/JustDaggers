@@ -1,5 +1,5 @@
-// Items
-	// Weapons
-
-// Tabs
-itemGroup.tab_justdaggers=JustDaggers
+item.daggerWood.name=Wooden Dagger
+item.daggerStone.name=Stone Dagger
+item.daggerIron.name=Iron Dagger
+item.daggerGold.name=Gold Dagger
+item.daggerDiamond.name=Diamond Dagger
